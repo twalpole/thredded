@@ -110,6 +110,7 @@ RSpec.configure do |config| # rubocop:disable Metrics/BlockLength
         ActiveRecord::Tasks::DatabaseTasks.create_current
         Thredded::DbTools.restore
       else
+        puts "db after cleaning"
         DatabaseCleaner.clean
       end
     end
@@ -149,6 +150,7 @@ RSpec.configure do |config| # rubocop:disable Metrics/BlockLength
     end
 
     config.append_after(:each) do
+      puts "db cleaning"
       DatabaseCleaner.clean
     end
   end
@@ -179,5 +181,5 @@ Capybara.configure do |config|
   config.default_max_wait_time = 5
 
 end
-# Capybara.server = :puma
+#Capybara.server = :puma
 

@@ -36,9 +36,9 @@ feature 'User replying to topic' do
 
     # (it's to try stop it from impacting the next spec)
     # TODO: if it works, replace this with something more sensible
-    puts 'sleeping for a long time'
-    sleep(10)
-    puts 'slept for a long time'
+    # puts 'sleeping for a long time'
+    # sleep(10)
+    # puts 'slept for a long time'
   end
 
   def user
