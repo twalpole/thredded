@@ -177,4 +177,6 @@ Capybara.javascript_driver = :headless_chromium
 Capybara.configure do |config|
   # bump from the default of 2 seconds because travis can be slow
   config.default_max_wait_time = 5
+
 end
+
