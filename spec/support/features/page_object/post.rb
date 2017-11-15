@@ -43,6 +43,7 @@ module PageObject
     def start_quote
       open_post_actions
       within css_selector do
+        puts "clicking on the start quote button"
         click_on I18n.t('thredded.posts.quote_btn')
       end
     end

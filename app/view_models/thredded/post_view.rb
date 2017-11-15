@@ -48,6 +48,7 @@ module Thredded
     end
 
     def quote_path
+      puts "calling quote_path"
       Thredded::UrlsHelper.quote_post_path(@post)
     end
 

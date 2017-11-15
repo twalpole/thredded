@@ -33,6 +33,7 @@ feature 'User replying to topic' do
     expect(posts.post_form.content).to(start_with('>').and(end_with("\n\n")))
     # Expect current path to not have changed because the JS magic takes place
     expect(page).to have_current_path(posts.path)
+    puts page.html
 
     # (it's to try stop it from impacting the next spec)
     # TODO: if it works, replace this with something more sensible
