@@ -4,6 +4,7 @@ require 'spec_helper'
 
 feature 'User creates new topic' do
   scenario 'with title and content', js: true do
+    puts "path is #{page.current_url}"
     topic = new_topic
 
     topic.fill_topic_form('Hello *world*!')
